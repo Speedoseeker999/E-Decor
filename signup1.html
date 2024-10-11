@@ -52,7 +52,6 @@
                 return;
             }
 
-            // Send the data to the backend
             const response = await fetch('http://localhost:3000/register', {
                 method: 'POST',
                 headers: {
@@ -62,7 +61,14 @@
             });
 
             const result = await response.text();
-            alert(result); // Display the backend response
+            alert(result); 
+
+            if (response.ok) {
+               
+                window.location.href = 'index.html';
+            } else {
+                alert('Signup failed. Please try again.');
+            }
         });
     </script>
 </body>
