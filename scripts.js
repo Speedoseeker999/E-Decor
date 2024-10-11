@@ -6,6 +6,5 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
         alert('Passwords do not match.');
     } else {
         alert('Signup successful!');
-        // Add your form submission logic here
     }
 });
