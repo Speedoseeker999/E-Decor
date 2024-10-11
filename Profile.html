@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Decor Profile Page</title>
+    <link rel="stylesheet" href="Profile.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Side Panel -->
+        <div class="side-panel">
+            <div class="logo">
+                <img src="logo.png" alt="E-Decor Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#"><img src="home-icon.png" alt="Home Icon"> HOME</a></li>
+                    <li><a href="#"><img src="Activity.png" alt="Categories Icon"> CATEGORIES</a></li>
+                    <li><a href="#"><img src="Filter.png" alt="Filters Icon"> ADVANCE FILTERS</a></li>
+                    <li><a href="#"><img src="cart-icon.png" alt="Cart Icon"> YOUR CART</a></li>
+                    <li class="active"><a href="#"><img src="profile-icon.png" alt="Profile Icon"> PROFILE</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="profile-section">
+                <div class="user-info">
+                    <div class="avatar"></div>
+                    <h2>USERNAME</h2>
+                </div>
+                <div class="user-details">
+                    <h3>PERSONAL CREDENTIALS</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" placeholder="First Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" placeholder="Last Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <input type="text" id="address" placeholder="Address">
+                        </div>
+
+                        <h3>REGIONAL DETAILS</h3>
+                        <div class="form-group">
+                            <label for="country">Country</label>
+                            <input type="text" id="country" placeholder="Country">
+                        </div>
+                        <div class="form-group">
+                            <label for="state">State</label>
+                            <input type="text" id="state" placeholder="State">
+                        </div>
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input type="text" id="city" placeholder="City">
+                        </div>
+
+                        <h3>SENSITIVE DETAILS</h3>
+                        <div class="form-group">
+                            <label for="card-info">Card Info</label>
+                            <input type="text" id="card-info" placeholder="Card Info">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" placeholder="Password">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="favorites-section">
+                <div class="favorites-header">
+                    <input type="search" placeholder="Your Favorites">
+                </div>
+                <div class="favorites-info">
+                    <p>User's favorite selected items will be displayed here for sorting before adding them to cart.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
