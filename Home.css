@@ -16,7 +16,6 @@
     max-width: 100%; /* Ensure the banner is responsive */
     height: auto;
     display: block;
-    margin: 0 auto;
     margin-top: 0;
 }
 
@@ -86,7 +85,7 @@ a {
     top: 0;
     left: 120px; /* Adjusted for new sidebar width */
     right: 0;
-    height: 60px; /* Height remains to hold the search bar */
+    height: 50px; /* Height remains to hold the search bar */
     display: flex;
     justify-content: space-between;
     padding: 10px 20px; /* Adjusted padding */
