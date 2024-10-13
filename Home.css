@@ -1,7 +1,7 @@
 /* Welcome Section */
 .main-content {
     margin-left: 120px; /* Adjusted margin for new sidebar width */
-    padding-top: 20px;
+    padding-top: 0;
     text-align: center;
     height: 100vh;
     color: #1f1f1f;
@@ -93,6 +93,7 @@ a {
     backdrop-filter: none; /* No blur on the top bar */
     border: none;
     color: #e1c699; /* Text color (if needed for other items) */
+    align-items: center;
 }
 
 /* Blurry Glassy Search Bar */
