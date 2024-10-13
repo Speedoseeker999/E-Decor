@@ -1,0 +1,184 @@
+/* General Styling */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #000; /* Solid black background for body */
+    color: #e1c699;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Black Sidebar with Reflective White Shadow and Curves */
+.sidebar {
+    width: 120px; /* Sidebar width */
+    background-color: #000; /* Solid black background */
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    border-top-right-radius: 20px; /* Rounded top right corner */
+    border-bottom-right-radius: 20px; /* Rounded bottom right corner */
+    /* Reflective white shadow around the sidebar */
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.15), /* Soft glow */
+                0 0 30px 10px rgba(255, 255, 255, 0.1),  /* Outer reflective shadow */
+                inset 0 0 10px rgba(255, 255, 255, 0.2); /* Inner glow */
+}
+
+.logo {
+    font-size: 1.5em; /* Smaller text to fit narrower sidebar */
+    color: #e1c699;
+    margin-bottom: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-item {
+    margin: 15px 0; /* Reduced spacing for compact sidebar */
+    text-align: center;
+}
+
+.menu-item img {
+    width: 30px; /* Reduced icon size */
+    margin-bottom: 5px;
+}
+
+.menu-item span {
+    display: block;
+    font-size: 0.8em; /* Smaller font for compact display */
+}
+
+/* Invisible Top Bar */
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 120px; /* Adjusted for new sidebar width */
+    right: 0;
+    height: 40px; /* Reduced height */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center vertically */
+    padding: 5px 15px; /* Reduced padding */
+    background: transparent; /* Make the top bar completely invisible */
+    color: #e1c699; /* Text color (if needed for other items) */
+}
+
+/* Blurry Glassy Search Bar */
+.search-bar input {
+    background: rgba(255, 255, 255, 0.1); /* Translucent white for glassy effect */
+    border: none;
+    padding: 10px 20px; /* Increased padding for pill shape */
+    border-radius: 20px; /* Pill shape */
+    width: 300px;
+    color: white;
+    backdrop-filter: blur(10px); /* Blur effect for glassy appearance */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    transition: box-shadow 0.4s ease, border 0.4s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+/* Focus State for Search Bar */
+.search-bar input:focus {
+    outline: none; /* Remove default outline */
+    border: 2px solid transparent; /* Make border transparent initially */
+    box-shadow: 0 0 10px 5px rgba(255, 216, 141, 1), /* Intense glow with new color */
+                0 0 15px 5px rgba(255, 216, 141, 0.3); /* Softer outer glow */
+    transform: scale(1.02); /* Slightly increase the size for a fun effect */
+}
+
+/* Top Links */
+.top-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.top-links a {
+    margin-left: 15px;
+    color: #e1c699;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* Styling for the 'Tie Up With Us' link and 'Are You New? Sign Up' */
+.tie-up, .new-signup {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align small text on top */
+    align-items: center;
+}
+
+.tie-up .small-text,
+.new-signup .small-text {
+    font-size: 0.8em; /* Same small size for both */
+}
+
+.tie-up .large-text,
+.new-signup .large-text {
+    font-size: 1.2em; /* Larger size for "WITH US" and "SIGNUP" */
+    display: block;
+    margin-top: 5px; /* Added spacing between small and large text */
+}
+
+/* Styling for the other links */
+.top-links a:nth-child(3), .top-links a:nth-child(4) {
+    background-color: #e1c699; /* Add contrasting color */
+    padding: 8px 16px;
+    border-radius: 5px;
+    color: #1f1f1f;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Button shadow */
+}
+
+.top-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-links a:nth-child(3), .top-links a:nth-child(4) {
+    margin-left: 15px; /* Ensure consistent spacing */
+}
+
+/* Aligning 'Login' and 'Contact Us' */
+.top-links a:nth-child(3), .top-links a:nth-child(4) {
+    padding: 8px 12px;
+    font-size: 1em;
+    margin: 0 5px; /* Ensure they sit on the same line with minimal space */
+}
+
+/* Welcome Section */
+.main-content {
+    margin-left: 120px; /* Adjusted margin for new sidebar width */
+    margin-top: 40px; /* Match the height of the top-bar */
+    padding: 0;
+    text-align: center;
+    height: calc(100vh - 40px); /* Take into account the height of the top-bar */
+    color: #1f1f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000; /* Black background */
+}
+
+.banner {
+    max-width: 100%; /* Ensure the banner is responsive */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 0; /* Ensure no extra padding */
+    margin-top: 0; /* Ensure no top margin */
+}
