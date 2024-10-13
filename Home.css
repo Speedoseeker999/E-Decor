@@ -17,7 +17,7 @@
     height: auto; /* Maintain aspect ratio */
     display: block;
     margin: 0; /* Remove any default margin */
-    padding-bottom: 20px; /* Add space at the bottom */
+    padding-bottom: 5px; /* Add space at the bottom */
     max-width: none; /* Ensure it stretches to full width */
 }
 
