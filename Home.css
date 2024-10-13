@@ -1,3 +1,29 @@
+/* Welcome Section */
+.main-content {
+    margin-left: 200px;
+    padding-top: 60px;
+    text-align: center;
+    background-image: url('figuuu.png');
+    background-size: cover;
+    height: 100vh;
+    color: #e1c699;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.welcome-section h1 {
+    font-size: 4em;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.welcome-section p {
+    font-size: 1.5em;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
 /* General Styling */
 body {
     margin: 0;
@@ -77,30 +103,4 @@ a {
 .top-links a {
     margin-left: 20px;
     color: #e1c699;
-}
-
-/* Welcome Section */
-.main-content {
-    margin-left: 200px;
-    padding-top: 60px;
-    text-align: center;
-    background-image: url('figuuu.png');
-    background-size: cover;
-    height: 100vh;
-    color: #e1c699;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.welcome-section h1 {
-    font-size: 4em;
-    font-weight: bold;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-}
-
-.welcome-section p {
-    font-size: 1.5em;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
