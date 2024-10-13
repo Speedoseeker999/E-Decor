@@ -84,7 +84,7 @@ a {
     margin-left: 200px;
     padding-top: 60px;
     text-align: center;
-    background-image: url('./public/figuuu.png');
+    background-image: url('figuuu.png');
     background-size: cover;
     height: 100vh;
     color: #e1c699;
