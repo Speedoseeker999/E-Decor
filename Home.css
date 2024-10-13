@@ -17,6 +17,7 @@
     height: auto;
     display: block;
     margin: 0 auto;
+    margin-top: 0;
 }
 
 /* General Styling */
@@ -85,10 +86,10 @@ a {
     top: 0;
     left: 120px; /* Adjusted for new sidebar width */
     right: 0;
-    height: 80px; /* Height remains to hold the search bar */
+    height: 60px; /* Height remains to hold the search bar */
     display: flex;
     justify-content: space-between;
-    padding: 10px 30px; /* Adjusted padding */
+    padding: 10px 20px; /* Adjusted padding */
     background: transparent; /* Make the top bar completely invisible */
     backdrop-filter: none; /* No blur on the top bar */
     border: none;
