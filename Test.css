@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box; /* Ensures padding and border do not affect width and height */
+}
+
 /* General Styling */
 html, body {
     height: 100%;
@@ -162,23 +166,7 @@ a {
 /* Welcome Section */
 .main-content {
     margin-left: 120px; /* Adjusted margin for new sidebar width */
-    margin-top: 40px; /* Match the height of the top-bar */
-    padding: 0;
-    text-align: center;
-    height: calc(100vh - 40px); /* Take into account the height of the top-bar */
-    color: #1f1f1f;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #000; /* Black background */
-}
-
-.banner {
-    max-width: 100%; /* Ensure the banner is responsive */
-    height: auto;
-    display: block;
-    margin: 0 auto;
+    margin-top: 0; /* Reset to 0 */
     padding: 0; /* Ensure no extra padding */
-    margin-top: 0; /* Ensure no top margin */
-}
+    text-align: center;
+    height: calc(100vh - 40px);
