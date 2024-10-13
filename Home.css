@@ -1,7 +1,106 @@
+/* General Styling */
 body {
-    margin: 0; /* Remove default margin */
-    height: 100vh; /* Full height */
-    background-image: url('figuuu.png'); /* Path to your background image */
-    background-size: cover; /* Cover the entire viewport */
-    background-position: center; /* Center the image */
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #121212;
+    color: #e1c699;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #1f1f1f;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.logo {
+    font-size: 2em;
+    color: #e1c699;
+    margin-bottom: 30px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-item {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.menu-item img {
+    width: 40px;
+    margin-bottom: 5px;
+}
+
+.menu-item span {
+    display: block;
+    font-size: 1em;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: #1f1f1f;
+    color: #e1c699;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 200px;
+    right: 0;
+    align-items: center;
+}
+
+.search-bar input {
+    background-color: #292929;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+    color: white;
+}
+
+.top-links a {
+    margin-left: 20px;
+    color: #e1c699;
+}
+
+/* Welcome Section */
+.main-content {
+    margin-left: 200px;
+    padding-top: 60px;
+    text-align: center;
+    background-image: url('./public/figuuu.png');
+    background-size: cover;
+    height: 100vh;
+    color: #e1c699;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.welcome-section h1 {
+    font-size: 4em;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.welcome-section p {
+    font-size: 1.5em;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
