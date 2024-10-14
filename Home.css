@@ -102,13 +102,15 @@ a {
 .search-bar input {
     background: rgba(255, 255, 255, 0.1); /* Translucent white for glassy effect */
     border: none;
-    padding: 10px 20px; /* Increased padding for pill shape */
+    padding: 12px 25px; /* Adjusted padding for larger size and better alignment */
     border-radius: 20px; /* Pill shape */
-    width: 300px;
+    width: 350px; /* Increased width for bigger search bar */
     color: white;
     backdrop-filter: blur(10px); /* Blur effect for glassy appearance */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
     transition: box-shadow 0.4s ease, border 0.4s ease, transform 0.3s ease; /* Smooth transitions */
+    margin-right: 30px; /* Adjust margin for better spacing with adjacent text */
+    margin-top: 8px; /* Adjust for perfect vertical alignment with the adjacent text */
 }
 
 /* Focus State for Search Bar */
