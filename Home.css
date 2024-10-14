@@ -72,7 +72,8 @@ a {
 }
 
 .menu-item img {
-    width: 30px; /* Reduced icon size */
+    height: 48px;
+    width: 48px; /* Reduced icon size */
     margin-bottom: 5px;
 }
 
