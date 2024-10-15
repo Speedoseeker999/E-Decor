@@ -125,28 +125,30 @@ a {
 /* Top Links */
 .top-links {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around; /* Evenly distribute links across the available space */
     align-items: center;
-    flex-wrap: wrap; /* Allow links to wrap to a new line if necessary */
+    flex-wrap: nowrap; /* Prevent links from wrapping to new lines */
+    width: 100%; /* Utilize the full width of the top bar */
+    padding-right: 20px; /* Add some padding to ensure links don’t touch the edge */
 }
 
 .top-links a {
-    margin-left: 15px; /* Reduced space between links for better alignment */
+    margin-left: 15px; /* Space between links for alignment */
     color: #e1c699;
     text-transform: uppercase;
     font-weight: bold;
-    padding: 8px 15px; /* Reduced padding to make the links more compact */
+    padding: 8px 15px; /* Adjusted padding for better alignment */
     background: none; /* Remove background */
     box-shadow: none; /* Remove button-like shadow */
-    vertical-align: middle; /* Align with the middle of the search bar */
-    font-size: 0.9em; /* Slightly reduced font size */
+    vertical-align: middle; /* Align text to the middle */
+    font-size: 1em; /* Slightly increased font size */
 }
 
 /* Adjusted Styling for All Icons in Top Links */
 .top-links a img {
-    height: 18px; /* Set a smaller, uniform icon height */
-    width: 18px; /* Set a smaller, uniform icon width */
-    margin-right: 8px; /* Space between the icon and text */
+    height: 24px; /* Set a uniform icon height */
+    width: 24px; /* Set a uniform icon width */
+    margin-right: 5px; /* Space between the icon and text */
 }
 
 /* Styling for the 'Tie Up With Us' link and 'Are You New? Sign Up' */
@@ -160,9 +162,9 @@ a {
 
 .tie-up .top-icon,
 .new-signup .top-icon {
-    margin-right: 5px; /* Reduced space between icon and text */
-    height: 18px; /* Set uniform size for all icons */
-    width: 18px; /* Set uniform size for all icons */
+    margin-right: 5px; /* Space between icon and text */
+    height: 24px; /* Uniform icon size for consistency */
+    width: 24px; /* Uniform icon size for consistency */
 }
 
 .tie-up .text-group,
@@ -172,17 +174,11 @@ a {
 
 .tie-up .small-text,
 .new-signup .small-text {
-    font-size: 0.7em; /* Slightly reduced font size for compact layout */
+    font-size: 0.8em; /* Adjusted font size for compact layout */
 }
 
 .tie-up .large-text,
 .new-signup .large-text {
-    font-size: 1em; /* Reduced size for "WITH US" and "SIGNUP" */
+    font-size: 1em; /* Adjusted size for readability */
     display: block;
-}
-
-/* Justify Text within the Groups */
-.new-signup, .tie-up {
-    flex-direction: column; /* Stack text vertically */
-    text-align: center; /* Center the text for each group */
 }
