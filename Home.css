@@ -102,15 +102,16 @@ a {
 .search-bar input {
     background: rgba(255, 255, 255, 0.1); /* Translucent white for glassy effect */
     border: none;
-    padding: 12px 25px; /* Adjusted padding for larger size and better alignment */
+    padding: 14px 20px; /* Adjusted padding */
     border-radius: 20px; /* Pill shape */
-    width: 350px; /* Increased width for bigger search bar */
+    width: 300px; /* Decreased width for smaller search bar */
     color: white;
     backdrop-filter: blur(10px); /* Blur effect for glassy appearance */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
     transition: box-shadow 0.4s ease, border 0.4s ease, transform 0.3s ease; /* Smooth transitions */
     margin-right: 30px; /* Adjust margin for better spacing with adjacent text */
-    margin-top: 8px; /* Adjust for perfect vertical alignment with the adjacent text */
+    margin-top: 20px; /* Move the search bar slightly down */
+    vertical-align: middle; /* Align with the middle of the line */
 }
 
 /* Focus State for Search Bar */
@@ -126,41 +127,19 @@ a {
 .top-links {
     display: flex;
     justify-content: flex-end;
-    align-items: center; /* Align items vertically */
+    align-items: center;
 }
 
 .top-links a {
-    margin-left: 15px;
+    margin-left: 25px; /* Increased space between links for better alignment */
     color: #e1c699;
     text-transform: uppercase;
     font-weight: bold;
-    display: flex;
-    align-items: center; /* Ensure icons and text are vertically centered */
-    padding: 5px 0;
+    padding: 14px 30px; /* Increased padding for better alignment with search bar */
+    background: none; /* Remove background */
+    box-shadow: none; /* Remove button-like shadow */
+    vertical-align: middle; /* Align with the middle of the search bar */
 }
-
-.top-links a .top-icon {
-    width: 32px; /* Adjust icon size */
-    height: 32px;
-    margin-right: 4px; /* Space between icon and text */
-    align-self: center; /* Ensures the icon aligns with text */
-}
-
-.top-links .text-group {
-    display: flex; /* Use flexbox for text alignment */
-    flex-direction: column; /* Align text vertically */
-    text-align: left; /* Align text to the left */
-}
-
-.top-links .small-text {
-    font-size: 12px;
-}
-
-.top-links .large-text {
-    font-size: 14px;
-    font-weight: bold;
-}
-
 
 /* Styling for the 'Tie Up With Us' link and 'Are You New? Sign Up' */
 .tie-up, .new-signup {
