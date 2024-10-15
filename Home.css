@@ -98,6 +98,18 @@ a {
     color: #e1c699; /* Text color (if needed for other items) */
 }
 
+.small-text {
+    background: -webkit-linear-gradient(left, #ffd88d, #806520);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.large-text {
+    background: -webkit-linear-gradient(left, #ffd88d, #806520);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 /* Blurry Glassy Search Bar */
 .search-bar input {
     background: rgba(255, 255, 255, 0.1); /* Translucent white for glassy effect */
