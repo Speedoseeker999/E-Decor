@@ -126,46 +126,51 @@ a {
 .top-links {
     display: flex;
     justify-content: flex-end;
-    align-items: center; /* Align items vertically */
+    align-items: center;
+    flex-wrap: wrap; /* Allow links to wrap to a new line if necessary */
 }
 
 .top-links a {
-    margin-left: 15px;
+    margin-left: 15px; /* Reduced space between links for better alignment */
     color: #e1c699;
     text-transform: uppercase;
     font-weight: bold;
-    display: flex;
-    align-items: center; /* Ensure icons and text are vertically centered */
-    padding: 5px 0;
-}
-
-.top-links a .top-icon {
-    width: 32px; /* Adjust icon size */
-    height: 32px;
-    margin-right: 4px; /* Space between icon and text */
-    align-self: center; /* Ensures the icon aligns with text */
+    padding: 10px 20px; /* Reduced padding to make the links more compact */
+    background: none; /* Remove background */
+    box-shadow: none; /* Remove button-like shadow */
+    vertical-align: middle; /* Align with the middle of the search bar */
 }
 
 /* Styling for the 'Tie Up With Us' link and 'Are You New? Sign Up' */
 .tie-up, .new-signup {
     display: flex;
-    align-items: center; /* Aligns the icon and text vertically */
+    flex-direction: row; /* Align icon and text horizontally */
+    align-items: center; /* Vertically align icon and text */
+    justify-content: flex-start; /* Keep the content aligned to the start */
+    text-align: left; /* Align text to the left */
 }
 
 .tie-up .top-icon,
 .new-signup .top-icon {
-    margin-right: 4px; /* Space between icon and text */
+    margin-right: 5px; /* Reduced space between icon and text */
+    height: 20px; /* Adjust icon size to be smaller */
+    width: 20px;  /* Adjust icon size to be smaller */
+}
+
+.tie-up .text-group,
+.new-signup .text-group {
+    display: inline-block;
 }
 
 .tie-up .small-text,
 .new-signup .small-text {
-    font-size: 12px; /* Same small size for both */
+    font-size: 0.7em; /* Slightly reduced font size for compact layout */
 }
 
 .tie-up .large-text,
 .new-signup .large-text {
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 1em; /* Reduced size for "WITH US" and "SIGNUP" */
+    display: block;
 }
 
 /* Justify Text within the Groups */
