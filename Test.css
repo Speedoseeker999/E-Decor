@@ -102,15 +102,16 @@ a {
 .search-bar input {
     background: rgba(255, 255, 255, 0.1); /* Translucent white for glassy effect */
     border: none;
-    padding: 12px 25px; /* Adjusted padding for larger size and better alignment */
+    padding: 14px 20px; /* Adjusted padding */
     border-radius: 20px; /* Pill shape */
-    width: 350px; /* Increased width for bigger search bar */
+    width: 300px; /* Decreased width for smaller search bar */
     color: white;
     backdrop-filter: blur(10px); /* Blur effect for glassy appearance */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
     transition: box-shadow 0.4s ease, border 0.4s ease, transform 0.3s ease; /* Smooth transitions */
     margin-right: 30px; /* Adjust margin for better spacing with adjacent text */
-    margin-top: 8px; /* Adjust for perfect vertical alignment with the adjacent text */
+    margin-top: 20px; /* Move the search bar slightly down */
+    vertical-align: middle; /* Align with the middle of the line */
 }
 
 /* Focus State for Search Bar */
@@ -127,7 +128,7 @@ a {
     display: flex;
     justify-content: flex-end; /* Align links towards the right */
     align-items: center;
-    gap: 10px; /* Use gap to control spacing between links */
+    gap: 15px; /* Use gap to control spacing between links */
     padding-right: 20px; /* Add padding to ensure links don't touch the edge */
     flex-wrap: nowrap; /* Ensure all links remain on a single line */
 }
@@ -141,13 +142,13 @@ a {
     padding: 8px 10px; /* Slightly reduce padding */
     background: none; /* Remove background */
     box-shadow: none; /* Remove button-like shadow */
-    font-size: 0.9em; /* Slightly reduced font size */
+    font-size: 0.95em; /* Adjusted font size for readability */
 }
 
 /* Adjusted Styling for All Icons in Top Links */
 .top-links a img {
-    height: 22px; /* Set uniform icon height */
-    width: 22px; /* Set uniform icon width */
+    height: 32px; /* Set larger icon height */
+    width: 32px; /* Set larger icon width */
     margin-right: 6px; /* Spacing between icon and text */
 }
 
@@ -162,8 +163,8 @@ a {
 .tie-up .top-icon,
 .new-signup .top-icon {
     margin-right: 5px; /* Space between icon and text */
-    height: 22px; /* Consistent icon size */
-    width: 22px; /* Consistent icon size */
+    height: 32px; /* Consistent icon size */
+    width: 32px; /* Consistent icon size */
 }
 
 .tie-up .text-group,
@@ -178,6 +179,6 @@ a {
 
 .tie-up .large-text,
 .new-signup .large-text {
-    font-size: 0.95em; /* Reduced size for better balance */
+    font-size: 0.95em; /* Adjusted size for better balance */
     display: block;
-}
+        }
