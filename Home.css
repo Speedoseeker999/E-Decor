@@ -146,7 +146,7 @@ a {
 .top-links a img.top-icon {
     width: 32px; /* Adjust size to fit better */
     height: 32px;
-    margin-right: 8px; /* Space between icon and text */
+    margin-right: 4px; /* Space between icon and text */
     flex-shrink: 0; /* Keep icon size consistent */
 }
 
