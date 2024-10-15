@@ -143,11 +143,23 @@ a {
 
 /* Styling for the 'Tie Up With Us' link and 'Are You New? Sign Up' */
 .tie-up, .new-signup {
-    text-align: center;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Align small text on top */
-    align-items: center;
+    flex-direction: row; /* Align icon and text horizontally */
+    align-items: center; /* Vertically align icon and text */
+    justify-content: flex-start; /* Keep the content aligned to the start */
+    text-align: left; /* Align text to the left */
+}
+
+.tie-up .top-icon,
+.new-signup .top-icon {
+    margin-right: 5px; /* Add some space between icon and text */
+    height: 32px; /* Adjust icon size if necessary */
+    width: 32px;  /* Adjust icon size if necessary */
+}
+
+.tie-up .text-group,
+.new-signup .text-group {
+    display: inline-block;
 }
 
 .tie-up .small-text,
@@ -157,7 +169,6 @@ a {
 
 .tie-up .large-text,
 .new-signup .large-text {
-    font-size: 1.2em; /* Larger size for "WITH US" and "SIGNUP" */
+    font-size: 1.0em; /* Larger size for "WITH US" and "SIGNUP" */
     display: block;
-    margin-top: 5px; /* Added spacing between small and large text */
 }
