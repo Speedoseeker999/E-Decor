@@ -69,6 +69,9 @@ a {
 .menu-item {
     margin: 15px 0; /* Reduced spacing for compact sidebar */
     text-align: center;
+    background: -webkit-linear-gradient(right, #ffd88d, #806520);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .menu-item img {
