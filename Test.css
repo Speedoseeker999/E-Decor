@@ -125,30 +125,30 @@ a {
 /* Top Links */
 .top-links {
     display: flex;
-    justify-content: space-around; /* Evenly distribute links across the available space */
+    justify-content: flex-end; /* Align links towards the right */
     align-items: center;
-    flex-wrap: nowrap; /* Prevent links from wrapping to new lines */
-    width: 100%; /* Utilize the full width of the top bar */
-    padding-right: 20px; /* Add some padding to ensure links don’t touch the edge */
+    gap: 10px; /* Use gap to control spacing between links */
+    padding-right: 20px; /* Add padding to ensure links don't touch the edge */
+    flex-wrap: nowrap; /* Ensure all links remain on a single line */
 }
 
 .top-links a {
-    margin-left: 15px; /* Space between links for alignment */
+    display: flex;
+    align-items: center; /* Align icon and text vertically */
     color: #e1c699;
     text-transform: uppercase;
     font-weight: bold;
-    padding: 8px 15px; /* Adjusted padding for better alignment */
+    padding: 8px 10px; /* Slightly reduce padding */
     background: none; /* Remove background */
     box-shadow: none; /* Remove button-like shadow */
-    vertical-align: middle; /* Align text to the middle */
-    font-size: 1em; /* Slightly increased font size */
+    font-size: 0.9em; /* Slightly reduced font size */
 }
 
 /* Adjusted Styling for All Icons in Top Links */
 .top-links a img {
-    height: 24px; /* Set a uniform icon height */
-    width: 24px; /* Set a uniform icon width */
-    margin-right: 5px; /* Space between the icon and text */
+    height: 22px; /* Set uniform icon height */
+    width: 22px; /* Set uniform icon width */
+    margin-right: 6px; /* Spacing between icon and text */
 }
 
 /* Styling for the 'Tie Up With Us' link and 'Are You New? Sign Up' */
@@ -156,15 +156,14 @@ a {
     display: flex;
     flex-direction: row; /* Align icon and text horizontally */
     align-items: center; /* Vertically align icon and text */
-    justify-content: flex-start; /* Keep the content aligned to the start */
     text-align: left; /* Align text to the left */
 }
 
 .tie-up .top-icon,
 .new-signup .top-icon {
     margin-right: 5px; /* Space between icon and text */
-    height: 24px; /* Uniform icon size for consistency */
-    width: 24px; /* Uniform icon size for consistency */
+    height: 22px; /* Consistent icon size */
+    width: 22px; /* Consistent icon size */
 }
 
 .tie-up .text-group,
@@ -174,11 +173,11 @@ a {
 
 .tie-up .small-text,
 .new-signup .small-text {
-    font-size: 0.8em; /* Adjusted font size for compact layout */
+    font-size: 0.75em; /* Reduced font size for compact layout */
 }
 
 .tie-up .large-text,
 .new-signup .large-text {
-    font-size: 1em; /* Adjusted size for readability */
+    font-size: 0.95em; /* Reduced size for better balance */
     display: block;
 }
