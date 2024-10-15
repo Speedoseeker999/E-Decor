@@ -125,46 +125,61 @@ a {
 /* Top Links */
 .top-links {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end;  /* Align all links to the right */
     align-items: center;
+    gap: 20px; /* Space between the links */
 }
 
 .top-links a {
-    margin-left: 15px;
+    margin-left: 0; /* Remove margin since gap is applied */
     color: #e1c699;
     text-transform: uppercase;
     font-weight: bold;
     display: flex;
-    align-items: flex-start; /* Align icon and text to the start (left) */
+    align-items: center; /* Align icon and text */
     padding: 5px 0;
     background: none;
     box-shadow: none;
     text-decoration: none; /* Remove underline */
-    text-align: left; /* Ensure text is left-aligned */
 }
 
 .top-links a img.top-icon {
-    width: 32px;
-    height: 32px;
-    margin-right: 4px; /* Space between icon and text */
-    flex-shrink: 0; /* Ensure the icon doesn't shrink */
+    width: 18px; /* Adjust size to fit better */
+    height: 18px;
+    margin-right: 8px; /* Space between icon and text */
+    flex-shrink: 0; /* Keep icon size consistent */
 }
 
 .top-links a .small-text {
     font-size: 12px;
     display: block;
+    text-align: left;
 }
 
 .top-links a .large-text {
     font-size: 14px;
     display: block;
+    text-align: left; /* Keep text aligned left */
     font-weight: bold;
 }
 
-/* Ensure the text remains left-aligned, and if there's multi-line text, it won't center */
-.top-links a span {
-    text-align: left;
+/* Individual Link Styling for icons and text alignment */
+.tie-up img.top-icon {
+    content: url("icons/Vendor.png"); /* Example image for tie-up */
 }
+
+.new-signup img.top-icon {
+    content: url("icons/signup.png"); /* Example image for signup */
+}
+
+.login img.top-icon {
+    content: url("icons/login.png"); /* Example image for login */
+}
+
+.contact img.top-icon {
+    content: url("icons/contact.png"); /* Example image for contact */
+}
+
 
 
 
