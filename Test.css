@@ -144,6 +144,9 @@ a {
     box-shadow: none; /* Remove button-like shadow */
     font-size: 1em; /* Slightly increased font size */
     white-space: nowrap; /* Ensure text stays on a single line */
+    background: -webkit-linear-gradient(left, #ffd88d, #806520);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Adjusted Styling for All Icons in Top Links */
