@@ -135,10 +135,18 @@ a {
     color: #e1c699;
     text-transform: uppercase;
     font-weight: bold;
-    padding: 10px 20px; /* Reduced padding to make the links more compact */
+    padding: 8px 15px; /* Reduced padding to make the links more compact */
     background: none; /* Remove background */
     box-shadow: none; /* Remove button-like shadow */
     vertical-align: middle; /* Align with the middle of the search bar */
+    font-size: 0.9em; /* Slightly reduced font size */
+}
+
+/* Adjusted Styling for All Icons in Top Links */
+.top-links a img {
+    height: 18px; /* Set a smaller, uniform icon height */
+    width: 18px; /* Set a smaller, uniform icon width */
+    margin-right: 8px; /* Space between the icon and text */
 }
 
 /* Styling for the 'Tie Up With Us' link and 'Are You New? Sign Up' */
@@ -153,8 +161,8 @@ a {
 .tie-up .top-icon,
 .new-signup .top-icon {
     margin-right: 5px; /* Reduced space between icon and text */
-    height: 20px; /* Adjust icon size to be smaller */
-    width: 20px;  /* Adjust icon size to be smaller */
+    height: 18px; /* Set uniform size for all icons */
+    width: 18px; /* Set uniform size for all icons */
 }
 
 .tie-up .text-group,
