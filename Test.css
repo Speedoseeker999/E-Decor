@@ -128,7 +128,7 @@ a {
     display: flex;
     justify-content: flex-end; /* Align links towards the right */
     align-items: center;
-    gap: 15px; /* Use gap to control spacing between links */
+    gap: 20px; /* Increase gap to control spacing between links */
     padding-right: 20px; /* Add padding to ensure links don't touch the edge */
     flex-wrap: nowrap; /* Ensure all links remain on a single line */
 }
@@ -139,10 +139,11 @@ a {
     color: #e1c699;
     text-transform: uppercase;
     font-weight: bold;
-    padding: 8px 10px; /* Slightly reduce padding */
+    padding: 8px 5px; /* Adjust padding to keep links compact */
     background: none; /* Remove background */
     box-shadow: none; /* Remove button-like shadow */
-    font-size: 0.95em; /* Adjusted font size for readability */
+    font-size: 1em; /* Slightly increased font size */
+    white-space: nowrap; /* Ensure text stays on a single line */
 }
 
 /* Adjusted Styling for All Icons in Top Links */
@@ -181,4 +182,4 @@ a {
 .new-signup .large-text {
     font-size: 0.95em; /* Adjusted size for better balance */
     display: block;
-        }
+    }
