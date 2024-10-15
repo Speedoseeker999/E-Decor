@@ -134,18 +134,20 @@ a {
     color: #e1c699;
     text-transform: uppercase;
     font-weight: bold;
-    display: flex; /* Change to flex for icon alignment */
-    align-items: center; /* Vertically center the text and icon */
+    display: flex;
+    align-items: flex-start; /* Align icon and text to the start (left) */
     padding: 5px 0;
     background: none;
     box-shadow: none;
     text-decoration: none; /* Remove underline */
+    text-align: left; /* Ensure text is left-aligned */
 }
 
 .top-links a img.top-icon {
     width: 32px;
     height: 32px;
-    margin-right: 8px; /* Space between icon and text */
+    margin-right: 4px; /* Space between icon and text */
+    flex-shrink: 0; /* Ensure the icon doesn't shrink */
 }
 
 .top-links a .small-text {
@@ -158,6 +160,12 @@ a {
     display: block;
     font-weight: bold;
 }
+
+/* Ensure the text remains left-aligned, and if there's multi-line text, it won't center */
+.top-links a span {
+    text-align: left;
+}
+
 
 
 /* Styling for the 'Tie Up With Us' link and 'Are You New? Sign Up' */
