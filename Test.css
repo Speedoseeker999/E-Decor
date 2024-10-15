@@ -175,11 +175,17 @@ a {
 
 .tie-up .small-text,
 .new-signup .small-text {
-    font-size: 0.75em; /* Reduced font size for compact layout */
+    font-size: 0.8em; /* Same small size for both */
+    background: -webkit-linear-gradient(left, #ffd88d, #806520);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .tie-up .large-text,
 .new-signup .large-text {
-    font-size: 0.95em; /* Adjusted size for better balance */
+    font-size: 1.0em; /* Larger size for "WITH US" and "SIGNUP" */
     display: block;
-    }
+    background: -webkit-linear-gradient(left, #ffd88d, #806520);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
