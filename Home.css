@@ -126,7 +126,7 @@ a {
 .top-links {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: center; /* Align items vertically */
 }
 
 .top-links a {
@@ -135,7 +135,7 @@ a {
     text-transform: uppercase;
     font-weight: bold;
     display: flex;
-    align-items: center; /* Ensure icons and text are on the same line */
+    align-items: center; /* Ensure icons and text are vertically centered */
     padding: 5px 0;
 }
 
@@ -143,20 +143,20 @@ a {
     width: 32px; /* Adjust icon size */
     height: 32px;
     margin-right: 4px; /* Space between icon and text */
+    align-self: center; /* Ensures the icon aligns with text */
 }
 
 .top-links .text-group {
-    display: block;
-    text-align: justify; /* Apply text justification for multi-line text */
+    display: flex; /* Use flexbox for text alignment */
+    flex-direction: column; /* Align text vertically */
+    text-align: left; /* Align text to the left */
 }
 
 .top-links .small-text {
-    display: block;
     font-size: 12px;
 }
 
 .top-links .large-text {
-    display: block;
     font-size: 14px;
     font-weight: bold;
 }
