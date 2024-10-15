@@ -134,11 +134,31 @@ a {
     color: #e1c699;
     text-transform: uppercase;
     font-weight: bold;
-    display: inline-block;
-    padding: 5px 0; /* Remove button padding */
-    background: none; /* Remove background */
-    box-shadow: none; /* Remove button-like shadow */
+    display: flex; /* Change to flex for icon alignment */
+    align-items: center; /* Vertically center the text and icon */
+    padding: 5px 0;
+    background: none;
+    box-shadow: none;
+    text-decoration: none; /* Remove underline */
 }
+
+.top-links a img.top-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.top-links a .small-text {
+    font-size: 12px;
+    display: block;
+}
+
+.top-links a .large-text {
+    font-size: 14px;
+    display: block;
+    font-weight: bold;
+}
+
 
 /* Styling for the 'Tie Up With Us' link and 'Are You New? Sign Up' */
 .tie-up, .new-signup {
