@@ -1,0 +1,87 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #000; /* Solid black background for body */
+    color: #e1c699;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Sidebar with reflective shadow and rounded corners */
+.sidebar {
+    width: 120px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.15),
+                0 0 30px 10px rgba(255, 255, 255, 0.1),
+                inset 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.logo {
+    font-size: 1.5em;
+    color: #e1c699;
+    margin-bottom: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-item {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.menu-item img {
+    height: 48px;
+    width: 48px;
+    margin-bottom: 5px;
+}
+
+.menu-item span {
+    display: block;
+    font-size: 0.8em;
+}
+
+/* Main Content Area */
+.main-content {
+    margin-left: 120px;
+    padding-top: 80px;
+    text-align: center;
+    min-height: 100vh;
+    color: #e1c699;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    /* Glassy effect with background blur */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    backdrop-filter: blur(10px); /* Blur effect */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+/* Top Bar - empty bar to maintain layout without text or search bar */
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 120px;
+    right: 0;
+    height: 80px;
+    background: transparent;
+}
