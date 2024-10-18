@@ -90,14 +90,14 @@ a {
     margin-left: 120px;
     margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Set up 2 columns layout */
-    gap: 40px;
-    padding: 40px;
+    grid-template-columns: repeat(3, minmax(300px, 1fr)); /* Set up 2 columns layout */
+    gap: 20px;
+    padding: 20px;
 }
 
 .product-card {
     background: rgba(255, 255, 255, 0.1);
-    padding: 30px;
+    padding: 40px;
     border-radius: 15px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -111,8 +111,8 @@ a {
 }
 
 .product-card img {
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     margin-bottom: 15px;
 }
 
