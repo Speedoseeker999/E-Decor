@@ -117,7 +117,14 @@ a {
     margin-bottom: 15px;
 }
 
-.product-card .price {
+.product-card .product-name {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #e1c699;
+}
+
+.price {
     font-size: 1.2em;
     font-weight: bold;
     margin-bottom: 10px;
