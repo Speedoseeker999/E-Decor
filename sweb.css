@@ -90,15 +90,15 @@ a {
     margin-left: 120px;
     margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(3, minmax(200px, 1fr)); /* Set up 2 columns layout */
-    gap: 30px;
-    padding: 20px;
+    grid-template-columns: repeat(3, 1fr); /* Set up 2 columns layout */
+    gap: 40px;
+    padding: 40px;
 }
 
 .product-card {
     background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
     border-radius: 15px;
-    padding: 20px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     color: #e1c699;
@@ -111,8 +111,8 @@ a {
 }
 
 .product-card img {
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
     margin-bottom: 15px;
 }
 
