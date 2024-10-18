@@ -1,0 +1,86 @@
+/* Welcome Section */
+.main-content {
+    margin-left: 120px; /* Adjusted margin for new sidebar width */
+    padding-top: 80px; /* Adjusted padding to give enough space for the top bar */
+    text-align: center;
+    min-height: 100vh; /* Ensure the main content takes up full viewport height */
+    color: #1f1f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000; /* Black background */
+}
+
+.banner {
+    width: calc(100vw - 120px); /* Full width minus the sidebar width */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0; /* Remove any default margin */
+    padding-bottom: 1px; /* Add space at the bottom */
+    max-width: none; /* Ensure it stretches to full width */
+}
+
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #000; /* Solid black background for body */
+    color: #e1c699;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Black Sidebar with Reflective White Shadow and Curves */
+.sidebar {
+    width: 120px; /* Sidebar width */
+    background-color: #000; /* Solid black background */
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    border-top-right-radius: 20px; /* Rounded top right corner */
+    border-bottom-right-radius: 20px; /* Rounded bottom right corner */
+    /* Reflective white shadow around the sidebar */
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.15), /* Soft glow */
+                0 0 30px 10px rgba(255, 255, 255, 0.1),  /* Outer reflective shadow */
+                inset 0 0 10px rgba(255, 255, 255, 0.2); /* Inner glow */
+}
+
+.logo {
+    font-size: 1.5em; /* Smaller text to fit narrower sidebar */
+    color: #e1c699;
+    margin-bottom: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-item {
+    margin: 15px 0; /* Reduced spacing for compact sidebar */
+    text-align: center;
+    background: -webkit-linear-gradient(right, #ffd88d, #806520);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu-item img {
+    height: 48px;
+    width: 48px; /* Reduced icon size */
+    margin-bottom: 5px;
+}
+
+.menu-item span {
+    display: block;
+    font-size: 0.8em; /* Smaller font for compact display */
+}
