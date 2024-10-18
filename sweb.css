@@ -6,7 +6,7 @@
     min-height: 100vh; /* Ensure the main content takes up full viewport height */
     color: #1f1f1f;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-direction: column;
     background-color: #000; /* Black background */
@@ -87,10 +87,10 @@ a {
 
 /* Products Section Styling */
 .products-section {
-    margin-left: 150px;
-    margin-top: 50px;
+    margin-left: 120px;
+    margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Set up 2 columns layout */
+    grid-template-columns: repeat(3, minmax(200px, 1fr)); /* Set up 2 columns layout */
     gap: 30px;
     padding: 20px;
 }
