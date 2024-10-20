@@ -12,6 +12,14 @@
     background-color: #000; /* Black background */
 }
 
+.page-title {
+    font-size: 3em; /* Large font size for the title */
+    font-weight: bold;
+    margin-bottom: 20px; /* Space below the title */
+    color: #e1c699; /* Light golden color to match the theme */
+    text-align: center;
+}
+
 .banner {
     width: calc(100vw - 120px); /* Full width minus the sidebar width */
     height: auto; /* Maintain aspect ratio */
@@ -90,7 +98,7 @@ a {
     margin-left: 120px;
     margin-top: 0;
     display: grid;
-    grid-template-columns: repeat(3, minmax(300px, 1fr)); /* Set up 2 columns layout */
+    grid-template-columns: repeat(3, minmax(300px, 1fr)); /* Set up 3 columns layout */
     gap: 20px;
     padding: 0;
 }
@@ -98,7 +106,6 @@ a {
 .product-card {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
-    
     padding: 40px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -148,4 +155,101 @@ a {
 
 .product-card .add-to-cart:hover {
     background-color: #e1c699;
+}
+
+/* Invisible Top Bar */
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 120px; /* Adjusted for new sidebar width */
+    right: 0;
+    height: 80px; /* Height remains to hold the search bar */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px; /* Adjusted padding */
+    background: transparent; /* Make the top bar completely invisible */
+    backdrop-filter: none; /* No blur on the top bar */
+    border: none;
+    color: #e1c699; /* Text color (if needed for other items) */
+}
+
+/* Blurry Glassy Search Bar */
+.search-bar input {
+    background: rgba(255, 255, 255, 0.1); /* Translucent white for glassy effect */
+    border: none;
+    padding: 14px 20px; /* Adjusted padding */
+    border-radius: 20px; /* Pill shape */
+    width: 300px; /* Decreased width for smaller search bar */
+    color: white;
+    backdrop-filter: blur(10px); /* Blur effect for glassy appearance */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    transition: box-shadow 0.4s ease, border 0.4s ease, transform 0.3s ease; /* Smooth transitions */
+    margin-right: 30px; /* Adjust margin for better spacing with adjacent text */
+    margin-top: 20px; /* Move the search bar slightly down */
+    vertical-align: middle; /* Align with the middle of the line */
+}
+
+/* Focus State for Search Bar */
+.search-bar input:focus {
+    outline: none; /* Remove default outline */
+    border: 2px solid transparent; /* Make border transparent initially */
+    box-shadow: 0 0 10px 5px rgba(255, 216, 141, 1), /* Intense glow with new color */
+                0 0 15px 5px rgba(255, 216, 141, 0.3); /* Softer outer glow */
+    transform: scale(1.02); /* Slightly increase the size for a fun effect */
+}
+
+/* Top Links */
+.top-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.top-links a {
+    margin-left: 25px; /* Increased space between links for better alignment */
+    color: #e1c699;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 14px 30px; /* Increased padding for better alignment with search bar */
+    background: none; /* Remove background */
+    box-shadow: none; /* Remove button-like shadow */
+    vertical-align: middle; /* Align with the middle of the search bar */
+}
+
+/* Styling for the 'Tie Up With Us' link and 'Are You New? Sign Up' */
+.tie-up, .new-signup {
+    display: flex;
+    flex-direction: row; /* Align icon and text horizontally */
+    align-items: center; /* Vertically align icon and text */
+    justify-content: flex-start; /* Keep the content aligned to the start */
+    text-align: left; /* Align text to the left */
+}
+
+.tie-up .top-icon,
+.new-signup .top-icon {
+    margin-right: 5px; /* Add some space between icon and text */
+    height: 32px; /* Adjust icon size if necessary */
+    width: 32px;  /* Adjust icon size if necessary */
+}
+
+.tie-up .text-group,
+.new-signup .text-group {
+    display: inline-block;
+}
+
+.tie-up .small-text,
+.new-signup .small-text {
+    font-size: 0.8em; /* Same small size for both */
+    background: -webkit-linear-gradient(left, #ffd88d, #806520);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tie-up .large-text,
+.new-signup .large-text {
+    font-size: 1.0em; /* Larger size for "WITH US" and "SIGNUP" */
+    display: block;
+    background: -webkit-linear-gradient(left, #ffd88d, #806520);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
