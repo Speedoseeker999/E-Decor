@@ -1,31 +1,31 @@
 /* Welcome Section */
 .main-content {
-    margin-left: 120px;
-    padding-top: 80px;
+    margin-left: 120px; /* Adjusted margin for new sidebar width */
+    padding-top: 80px; /* Adjusted padding to give enough space for the top bar */
     text-align: center;
-    min-height: 100vh;
+    min-height: 100vh; /* Ensure the main content takes up full viewport height */
     color: #1f1f1f;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #000;
+    background-color: #000; /* Black background */
 }
 
 .banner {
-    width: calc(100vw - 120px);
-    height: auto;
+    width: calc(100vw - 120px); /* Full width minus the sidebar width */
+    height: auto; /* Maintain aspect ratio */
     display: block;
-    margin: 0;
-    padding-bottom: 1px;
-    max-width: none;
+    margin: 0; /* Remove any default margin */
+    padding-bottom: 1px; /* Add space at the bottom */
+    max-width: none; /* Ensure it stretches to full width */
 }
 
 /* General Styling */
 body {
     margin: 0;
     font-family: 'Josefin Sans', sans-serif;
-    background-color: #000;
+    background-color: #000; /* Solid black background for body */
     color: #e1c699;
 }
 
@@ -36,8 +36,8 @@ a {
 
 /* Black Sidebar with Reflective White Shadow and Curves */
 .sidebar {
-    width: 120px;
-    background-color: #000;
+    width: 120px; /* Sidebar width */
+    background-color: #000; /* Solid black background */
     position: fixed;
     top: 0;
     left: 0;
@@ -46,15 +46,16 @@ a {
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.15), 
-                0 0 30px 10px rgba(255, 255, 255, 0.1), 
-                inset 0 0 10px rgba(255, 255, 255, 0.2);
+    border-top-right-radius: 20px; /* Rounded top right corner */
+    border-bottom-right-radius: 20px; /* Rounded bottom right corner */
+    /* Reflective white shadow around the sidebar */
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.15), /* Soft glow */
+                0 0 30px 10px rgba(255, 255, 255, 0.1),  /* Outer reflective shadow */
+                inset 0 0 10px rgba(255, 255, 255, 0.2); /* Inner glow */
 }
 
 .logo {
-    font-size: 1.5em;
+    font-size: 1.5em; /* Smaller text to fit narrower sidebar */
     color: #e1c699;
     margin-bottom: 20px;
 }
@@ -66,92 +67,111 @@ a {
 }
 
 .menu-item {
-    margin: 15px 0;
+    margin: 15px 0; /* Reduced spacing for compact sidebar */
     text-align: center;
+    background: -webkit-linear-gradient(right, #ffd88d, #806520);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .menu-item img {
     height: 48px;
-    width: 48px;
+    width: 48px; /* Reduced icon size */
     margin-bottom: 5px;
 }
 
 .menu-item span {
     display: block;
-    font-size: 0.8em;
+    font-size: 0.8em; /* Smaller font for compact display */
 }
 
 /* Invisible Top Bar */
 .top-bar {
     position: fixed;
     top: 0;
-    left: 120px;
+    left: 120px; /* Adjusted for new sidebar width */
     right: 0;
-    height: 80px;
+    height: 80px; /* Height remains to hold the search bar */
     display: flex;
     justify-content: space-between;
-    padding: 10px 30px;
-    background: transparent;
-    backdrop-filter: none;
+    padding: 10px 30px; /* Adjusted padding */
+    background: transparent; /* Make the top bar completely invisible */
+    backdrop-filter: none; /* No blur on the top bar */
     border: none;
-    color: #e1c699;
+    color: #e1c699; /* Text color (if needed for other items) */
 }
 
 /* Blurry Glassy Search Bar */
 .search-bar input {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.1); /* Translucent white for glassy effect */
     border: none;
-    padding: 14px 20px;
-    border-radius: 20px;
-    width: 300px;
+    padding: 14px 20px; /* Adjusted padding */
+    border-radius: 20px; /* Pill shape */
+    width: 300px; /* Decreased width for smaller search bar */
     color: white;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    transition: box-shadow 0.4s ease, border 0.4s ease, transform 0.3s ease;
-    margin-right: 30px;
-    margin-top: 20px;
-    vertical-align: middle;
+    backdrop-filter: blur(10px); /* Blur effect for glassy appearance */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    transition: box-shadow 0.4s ease, border 0.4s ease, transform 0.3s ease; /* Smooth transitions */
+    margin-right: 30px; /* Adjust margin for better spacing with adjacent text */
+    margin-top: 20px; /* Move the search bar slightly down */
+    vertical-align: middle; /* Align with the middle of the line */
 }
 
+/* Focus State for Search Bar */
 .search-bar input:focus {
-    outline: none;
-    border: 2px solid transparent;
-    box-shadow: 0 0 10px 5px rgba(255, 216, 141, 1),
-                0 0 15px 5px rgba(255, 216, 141, 0.3);
-    transform: scale(1.02);
+    outline: none; /* Remove default outline */
+    border: 2px solid transparent; /* Make border transparent initially */
+    box-shadow: 0 0 10px 5px rgba(255, 216, 141, 1), /* Intense glow with new color */
+                0 0 15px 5px rgba(255, 216, 141, 0.3); /* Softer outer glow */
+    transform: scale(1.02); /* Slightly increase the size for a fun effect */
 }
 
 /* Top Links */
 .top-links {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end; /* Align links towards the right */
     align-items: center;
+    gap: 20px; /* Increase gap to control spacing between links */
+    padding-right: 20px; /* Add padding to ensure links don't touch the edge */
+    flex-wrap: nowrap; /* Ensure all links remain on a single line */
 }
 
 .top-links a {
-    margin-left: 25px;
+    display: flex;
+    align-items: center; /* Align icon and text vertically */
     color: #e1c699;
     text-transform: uppercase;
     font-weight: bold;
-    padding: 14px 30px;
-    background: none;
-    box-shadow: none;
-    vertical-align: middle;
+    padding: 8px 5px; /* Adjust padding to keep links compact */
+    background: none; /* Remove background */
+    box-shadow: none; /* Remove button-like shadow */
+    font-size: 1em; /* Slightly increased font size */
+    white-space: nowrap; /* Ensure text stays on a single line */
+    background: -webkit-linear-gradient(left, #ffd88d, #806520);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
+/* Adjusted Styling for All Icons in Top Links */
+.top-links a img {
+    height: 32px; /* Set larger icon height */
+    width: 32px; /* Set larger icon width */
+    margin-right: 6px; /* Spacing between icon and text */
+}
+
+/* Styling for the 'Tie Up With Us' link and 'Are You New? Sign Up' */
 .tie-up, .new-signup {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    text-align: left;
+    flex-direction: row; /* Align icon and text horizontally */
+    align-items: center; /* Vertically align icon and text */
+    text-align: left; /* Align text to the left */
 }
 
 .tie-up .top-icon,
 .new-signup .top-icon {
-    margin-right: 5px;
-    height: 32px;
-    width: 32px;
+    margin-right: 5px; /* Space between icon and text */
+    height: 32px; /* Consistent icon size */
+    width: 32px; /* Consistent icon size */
 }
 
 .tie-up .text-group,
@@ -161,7 +181,7 @@ a {
 
 .tie-up .small-text,
 .new-signup .small-text {
-    font-size: 0.8em;
+    font-size: 0.8em; /* Same small size for both */
     background: -webkit-linear-gradient(left, #ffd88d, #806520);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -169,7 +189,7 @@ a {
 
 .tie-up .large-text,
 .new-signup .large-text {
-    font-size: 1.0em;
+    font-size: 1.0em; /* Larger size for "WITH US" and "SIGNUP" */
     display: block;
     background: -webkit-linear-gradient(left, #ffd88d, #806520);
     -webkit-background-clip: text;
