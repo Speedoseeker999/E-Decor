@@ -115,11 +115,13 @@ a {
     box-shadow: 0 6px 15px rgba(255, 216, 141, 0.5);
 }
 
+/* Grid Image Styling */
 .grid-image {
     width: 80px; /* Set a consistent width */
     height: 80px; /* Set a consistent height */
     margin-bottom: 10px;
     object-fit: contain; /* Keep image aspect ratio */
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: transparent; /* Ensure no background color */
+    box-shadow: none; /* Remove any shadow */
+    border-radius: 0; /* Remove any border radius */
 }
