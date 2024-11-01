@@ -7,10 +7,10 @@
 }
 
 body {
-    margin: 0;
-    font-family: 'Josefin Sans', sans-serif;
-    background-color: #000; /* Solid black background for body */
+    display: flex;
+    background-color: #000;
     color: #e1c699;
+    overflow: hidden;
 }
 
 a {
@@ -20,8 +20,8 @@ a {
 
 /* Sidebar Styling */
 .sidebar {
-    width: 120px; /* Sidebar width */
-    background-color: #000; /* Solid black background */
+    width: 120px;
+    background-color: #000;
     position: fixed;
     top: 0;
     left: 0;
@@ -30,17 +30,14 @@ a {
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
-    border-top-right-radius: 20px; /* Rounded top right corner */
-    border-bottom-right-radius: 20px; /* Rounded bottom right corner */
-    /* Reflective white shadow around the sidebar */
-    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.15), /* Soft glow */
-                0 0 30px 10px rgba(255, 255, 255, 0.1),  /* Outer reflective shadow */
-                inset 0 0 10px rgba(255, 255, 255, 0.2); /* Inner glow */
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.15), 
+                0 0 30px 10px rgba(255, 255, 255, 0.1), 
+                inset 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
 .logo {
-    font-size: 1.5em;
-    color: #e1c699;
     margin-bottom: 20px;
 }
 
@@ -53,30 +50,34 @@ a {
 .menu-item {
     margin: 15px 0;
     text-align: center;
-    background: -webkit-linear-gradient(right, #ffd88d, #806520);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #e1c699;
+    font-weight: bold;
+    font-size: 0.8em;
 }
 
 .menu-item img {
     height: 48px;
     width: 48px;
     margin-bottom: 5px;
+    border-radius: 8px;
+    background-color: #1f1f1f;
+    padding: 5px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
 }
 
 .menu-item span {
     display: block;
-    font-size: 0.8em;
+    text-transform: uppercase;
 }
 
 /* Main Content Styling */
 .main-content {
-    margin-left: 140px; /* Leaves space for the sidebar */
+    margin-left: 140px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: calc(100vw - 140px); /* Full width minus sidebar */
-    height: 100vh; /* Full viewport height */
+    width: calc(100vw - 140px);
+    height: 100vh;
     padding: 20px;
     background-color: #121212;
     box-sizing: border-box;
@@ -106,20 +107,16 @@ a {
     border: 2px solid rgba(225, 198, 153, 0.5);
     border-radius: 10px;
     transition: background 0.3s, transform 0.3s;
-    box-shadow: 0 4px 10px rgba(255, 216, 141, 0.3);
 }
 
 .grid-item:hover {
     background-color: #444;
     transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(255, 216, 141, 0.5);
 }
 
 .grid-image {
-    width: 80px; /* Set a consistent width */
-    height: 80px; /* Set a consistent height */
+    width: 80px;
+    height: 80px;
     margin-bottom: 10px;
-    object-fit: contain; /* Keep image aspect ratio */
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    object-fit: contain; /* Maintain the aspect ratio */
 }
