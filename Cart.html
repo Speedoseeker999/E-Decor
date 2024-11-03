@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cart.css">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="icons/ED991_cropped.png" alt="E-Decor Logo" class="logo-img" width="60px" style="padding-left: 7px;">
+        </div>
+        <nav class="menu">
+            <a href="#" class="menu-item">
+                <img src="icons/Home.png" alt="Home" style="padding-left: 11px;" />
+                <span>HOME</span>
+            </a>
+            <a href="category.html" class="menu-item">
+                <img src="icons/Activity.png" alt="Categories" />
+                <span>CATEGORIES</span>
+            </a>
+            <a href="#" class="menu-item">
+                <img src="icons/Info.png" alt="Admin Login" />
+                <span>ADMIN LOGIN</span>
+            </a>
+            <a href="cart.html" class="menu-item">
+                <img src="icons/Cart.png" alt="Cart" />
+                <span>YOUR CART</span>
+            </a>
+            <a href="#" class="menu-item">
+                <img src="icons/Profile.png" alt="Profile" />
+                <span>PROFILE</span>
+            </a>
+        </nav>
+    </div>
+    
+    <div class="main-content">
+        <h2>Cart -</h2>
+        <div class="cart-items" id="cart-items">
+            <!-- Dynamic items will be added here by JavaScript -->
+        </div>
+
+        <!-- Bill Summary -->
+        <div class="bill-summary">
+            <h3>Total Bill Summary</h3>
+            <p id="total-items">Total Items - 0</p>
+            <p id="total-cost">Total Cost - ₹0</p>
+            <p id="delivery-cost">Delivery Cost - ₹150</p>
+            <p id="discount">Discount Applied - ₹0</p>
+            <p id="final-cost">Total Cost - ₹0</p>
+        </div>
+
+        <button class="checkout-btn">Proceed to Checkout</button>
+    </div>
+
+    <script src="cart.js"></script>
+</body>
+</html>
